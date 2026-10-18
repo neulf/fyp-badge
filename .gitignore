@@ -1,0 +1,16 @@
+# ESP-IDF build output and generated binaries
+build/
+build_*/
+sdkconfig.old
+dependencies.lock.old
+
+# Component Manager downloads; dependencies.lock restores these sources
+managed_components/
+
+# Local editor and tooling state
+.vscode/settings.json
+.clangd
+
+# Python cache files
+__pycache__/
+*.py[cod]

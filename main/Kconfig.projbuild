@@ -1,0 +1,9 @@
+menu "Template diagnostics"
+    config TEMPLATE_MIC_SELFTEST
+        bool "Run microphone stop/start regression on boot"
+        default n
+        help
+            Open the microphone page and exercise its actual button event for
+            ten stop/start cycles. Verify that PCM capture stops and resumes.
+            Enable only for hardware regression; normal firmware leaves it off.
+endmenu
